@@ -1,0 +1,81 @@
+
+html{
+    margin: 0;
+}
+body{
+    color: white;
+    background-image: url(../img/sala-cine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+   
+}
+
+.bg-image{
+    background-color: rgba(0,0,0, 0.3);
+    background-size: contain;
+    height: 100%;
+
+}
+
+article{
+    
+    color: white;
+    border-radius: 15px;
+    margin-top: 40px;
+    padding: 55px;
+    background-color:#0e335f;
+    box-shadow: 3px 3px 3px rgb(50, 49, 49);
+}
+
+a{
+    text-decoration: none;
+}
+
+input{
+    color: white;
+}
+input.form-control{
+    color: white;
+    background-color: #144076;
+    border: none;
+}
+input.form-control:focus{
+    background-color: #144076;
+}
+input.form-control::placeholder{
+    color: white;
+}
+
+.form-control {
+    height: 2.5rem;
+    border-radius: 1rem;
+
+
+}
+.plan{
+
+    height: 570px;
+
+}
+
+.plan-option{
+    margin: 2px;
+    margin-right: -100px;
+    padding: 15px 0 5px 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #144076;
+    border-radius: 10px;
+}
+
+img{
+    width: 30%;
+}
+
+
+
+
