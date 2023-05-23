@@ -1,0 +1,389 @@
+body{
+   background-color: #144076;
+   
+}
+
+.bg-dark {
+	background-color: #0f2947 !important;
+}
+
+.bg-light {
+	background-color: #144076 !important;
+    border: #144076 !important;
+}
+.bg-light:active {
+	background-color: #1d4a82 !important;
+    
+}
+
+.form-control::placeholder{
+    color: white;
+}
+.bg-modal{
+	background-color: #144076;
+}
+
+.card{
+    --bs-card-bg:#0f2947 !important;
+    --bs-border-color-translucent: rgb(105 28 28 / 18%);
+}
+.bg-card{
+    background-color:#0f2947 !important;
+    border: #0957b7 !important;
+
+
+}
+
+
+input{
+    color: white;
+}
+input.form-control{
+    color: white;
+    background-color: #144076;
+    border: none;
+}
+input.form-control:focus{
+    background-color: #144076;
+}
+input.form-control::placeholder{
+    color: white;
+}
+
+.form-control {
+    height: 3.5rem;
+    border-radius: 1rem;
+
+
+}
+
+.nav-item {
+	transition: all 0.3s ease-in-out;
+}
+a:hover{
+    background-color: rgba(0,0,0, 0.0);
+	color: var(--first-color);
+}
+.nav-link:hover {
+    color: #3a74e0  !important;
+    
+}
+
+.dropdown-menu{
+    background-color: #0f2947 !important;
+    
+
+
+}
+
+.categorias{
+    height: 15rem;
+    overflow-y: scroll;
+}
+
+
+button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-item:hover{
+    background-color:#144076;
+  }
+a img{
+    height: 3.5rem;
+}
+
+.nav-item{
+    margin: 20px;
+}
+
+.navbar .navbar-toggler {
+	--bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+	transition: all 0.3s ease-in-out;
+}
+
+.navbar .navbar-toggler:hover {
+	--bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+	opacity: 0.75;
+}
+
+
+
+
+button:focus:not(:focus-visible) {
+    outline: 10px;
+}
+
+
+.contenedor-carrusel{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.w-24{
+    width: 24%;
+
+}
+.carousel-item {
+    overflow: hidden;
+   
+}
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+/*titulo y controles*/
+.contenedor-titulo-control{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+}
+
+.contenedor-titulo-control .indicadores button{
+    background: #ffff;
+    height: 3px;
+    width: 10px;
+    margin: 2px;
+    border: none;
+
+}
+
+.contenedor-titulo-control .indicadores button:hover,
+.contenedor-titulo-control .indicadores button.activo{
+    background:#3a74e0;
+
+}
+
+/*carousel y flechas*/
+
+.peliculas-recomendadas{
+    margin-bottom: 25px;
+
+}
+
+.peliculas-recomendadas .contenedor-principal{
+    display: flex;
+    align-items: center;
+    position: relative;   
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha{
+    position: absolute;
+    border: none;
+    background: rgba(0,0,0, 0.3);
+    font-size: 40px;
+    height: 50%;
+    top: calc(50%-25%);
+    line-height: 40px;
+    width: 50px;
+    color: #ffff;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda{
+    left: 0px;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-derecha{
+    right: 0px;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha:hover{
+
+    background: rgba(0,0,0, 0.9);
+}
+
+/*carousel*/
+
+.peliculas-recomendadas .contenedor-carousel{
+    width: 100%;
+    padding: 20px 0 20px 0;
+    overflow:hidden;
+    scroll-behavior: smooth;
+
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula{
+    min-width: 25%;
+    transition: 0.3s ease all;
+    box-shadow: 5px 5px 10px rgba(0,0,0, 0.3);
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img{
+    width: 100%;
+    height: 25vh;
+    vertical-align: top;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover{
+    transform: scale(1.1);
+    transform-origin: center;
+    z-index: 1;
+}
+
+/*Lista de episodios*/
+
+.lista{
+    border: 1px solid white;
+    height: 120px;
+    overflow-y: scroll;
+ 
+}
+
+.lista li i{
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 2px;
+    padding-top: 5px;
+}
+
+.lista li .btn-secondary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: transparent;
+
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: transparent;
+}
+
+.lista li .btn-secondary i:hover{
+    color: #3a74e0  !important;
+}
+
+/*bloqueo de peliculas por tarifa*/
+
+.pelicula{
+    margin: 5px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .icon-container {
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    z-index: 1;
+    padding: 5px;
+    color: white;
+    background-color: rgba(0,0,0, 0.3);
+    padding: 10px;
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+
+  }
+
+  .icon-container:hover {
+    background-color: rgba(0,0,0, 0.7);
+  }
+/*estilos popover*/
+
+  .example-popover{
+    border: none;
+    background-color: transparent;
+  }
+  .example-popover:hover{
+    border: none;
+    background-color: transparent;
+  }
+
+  .custom-popover{
+
+    z-index: 3;
+    background-color: #144076;
+  }
+  .popover-body {
+    color: white;
+  }
+
+  .bs-popover-auto[data-popper-placement^=top]>.popover-arrow::after, .bs-popover-top>.popover-arrow::after {
+    bottom: var(--bs-popover-border-width);
+    border-top-color: #144076;
+}
+
+
+
+/*media query*/
+
+@media screen and (max-width: 1100px) {
+
+    .peliculas-recomendadas .contenedor-carousel .carousel .pelicula img{
+        width: 100%;
+        height: 19vh;
+        vertical-align: top;
+    }
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+    .peliculas-recomendadas .contenedor-carousel{
+        overflow: visible;
+    }
+
+    .peliculas-recomendadas .contenedor-carousel .carousel{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 5px;
+    }
+
+    .peliculas-recomendadas .indicadores,
+    .peliculas-recomendadas .flecha-derecha,
+    .peliculas-recomendadas .flecha-izquierda{
+        display: none;
+    }
+
+    .peliculas-recomendadas .contenedor-carousel .carousel .pelicula img{
+        width: 100%;
+        height: auto;
+        vertical-align: top;
+    }
+
+    .pelicula{
+        position: relative;
+        display: inline-block;
+      }
+      
+      .icon-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        padding: 5px;
+      }
+      
+      .icon-container{
+        width: 25px;
+        height: 25px;
+        color: white;
+        background-color: rgba(0,0,0, 0.3);
+        padding: 5px;
+        border-radius: 50%;
+      }
+
+      svg{
+        position: absolute;
+        top: 13%;
+        right: 17%;
+        width: 15px;
+        height: 20px;
+      }
+}
+
